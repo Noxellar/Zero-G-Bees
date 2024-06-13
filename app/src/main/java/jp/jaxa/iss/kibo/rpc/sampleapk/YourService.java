@@ -16,8 +16,8 @@ public class YourService extends KiboRpcService {
     protected void runPlan1(){
         // The mission starts.
         api.startMission();
-        Point astronaut = new Point(11.143d, -6.7607d, 4.9654d);
-        Quarternion astronaut = new Quarternion(0f, 0f, -0.707f, -0.707f);
+        Point astronautPoint = new Point(11.143d, -6.7607d, 4.9654d);
+        Quarternion astronautOrientation = new Quarternion(0f, 0f, -0.707f, -0.707f);
         api.moveTo(astronaut, astronaut, true);
         // Move to a point.
        // Point point = new Point(10.9d, -9.92284d, 5.195d);
